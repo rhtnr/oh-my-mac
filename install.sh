@@ -33,6 +33,17 @@ else
     echo "Powerlevel10k is already installed."
 fi
 
+# Install required fonts
+if ! fc-list | grep -qi "nerd font"; then
+    echo "Installing Nerd Fonts..."
+    brew tap homebrew/cask-fonts
+    brew install --cask font-hack-nerd-font
+    brew install --cask font-meslo-lg-nerd-font
+    brew install --cask font-fira-code-nerd-font
+else
+    echo "Required Nerd Fonts are already installed."
+fi
+
 # Install plugins
 PLUGINS_DIR="$HOME/.oh-my-zsh/custom/plugins"
 
