@@ -104,5 +104,5 @@ fi
 
 # Apply changes
 source "$HOME/.zshrc"
-
+brew install fzf
 echo "Oh My Zsh setup complete! Restart your terminal or run 'exec zsh' to apply changes."
