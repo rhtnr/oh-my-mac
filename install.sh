@@ -105,4 +105,5 @@ fi
 # Apply changes
 source "$HOME/.zshrc"
 brew install fzf
+brew install --cask font-input
 echo "Oh My Zsh setup complete! Restart your terminal or run 'exec zsh' to apply changes."
